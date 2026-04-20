@@ -134,14 +134,33 @@ class Mazda6EApi:
 
         vehicles = []
         for v in raw.get("data", []):
+            vehicleData = self.async_get_vehicleData(v["vehicleId"])
             vehicles.append(
                 Mazda6eVehicle(
                     vehicle_id=v["vehicleId"],
                     vin=v["vin"],
                     model_name=v["modelName"],
+                    car_name=vehicleData["carName"],
+                    plate_number=vehicleData["plateNumber"],
+                    drive_seat_position=vehicleData["driveSeatPosition"],
                 )
             )
         return vehicles
+
+    
+    async def async_get_vehicleData(self, vehicle_id: int):
+        url = f"{BASE}/cma-app-user/api/car/vehicles"
+        headers = {
+            **HEADERS_BASE,
+            "authorization": self.token,
+            "deviceid": self.deviceid,
+        }
+
+        raw = await self._request(url, headers, {})
+
+        for v in raw.get("data", []):
+            if v["carId"] = vehicleId
+                return v
 
     async def async_get_vehicle_status(self, vehicle_id: int):
         url = f"{BASE}/cma-app-car-condition/api/vehicle/condition/v2"
