@@ -1,7 +1,7 @@
 {
   "domain": "mazda 6e",
   "name": "Mazda 6e",
-  "codeowners": [],
+  "codeowners": ["@beyerste","@fano0001"],
   "config_flow": true,
   "documentation": "https://github.com/beyerste/home-assistant-mazda-6e",
   "issue_tracker": "https://github.com/beyerste/home-assistant-mazda-6e/issues",
