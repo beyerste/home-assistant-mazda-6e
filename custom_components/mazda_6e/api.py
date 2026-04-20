@@ -139,9 +139,6 @@ class Mazda6EApi:
                     vehicle_id=v["vehicleId"],
                     vin=v["vin"],
                     model_name=v["modelName"],
-                    car_name=v["carName"],
-                    plate_number=v["plateNumber"],
-                    drive_seat_Position=v["driveSeatPosition"]
                 )
             )
         return vehicles
