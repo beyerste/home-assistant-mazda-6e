@@ -1,10 +1,10 @@
 {
-  "domain": "mazda 6e",
+  "domain": "mazda6e_beyerste",
   "name": "Mazda 6e",
   "codeowners": ["@beyerste","@fano0001"],
   "config_flow": true,
   "documentation": "https://github.com/beyerste/home-assistant-mazda-6e",
   "issue_tracker": "https://github.com/beyerste/home-assistant-mazda-6e/issues",
   "iot_class": "cloud_polling",
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
