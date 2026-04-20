@@ -9,6 +9,7 @@ class Mazda6eVehicle:
     model_name: str
     car_name: str
     plate_number: str
+    drive_seat_position: str
 
 
 class ChargeConnectionStatus(IntEnum):
