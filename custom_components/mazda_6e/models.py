@@ -7,6 +7,8 @@ class Mazda6eVehicle:
     vehicle_id: int
     vin: str
     model_name: str
+    car_name: str
+    plate_number: str
 
 
 class ChargeConnectionStatus(IntEnum):
