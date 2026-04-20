@@ -244,6 +244,7 @@ class Mazda6eSensor(CoordinatorEntity, SensorEntity):
             serial_number=vehicle.vin,
             manufacturer="Mazda",
             model="6e",
+            plate_number=vehicle.plate_number
         )
 
     @property
